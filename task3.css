@@ -1,0 +1,62 @@
+/* styles.css */
+body {
+    font-family: Algerian, sans-serif; /* Stylish font */
+    text-align: center;
+    color: rgb(1, 1, 11);
+    background-color: #00ffff; /* Vibrant background */
+    margin: 0;
+    height: 100vh; /* Full height for body */
+    display: flex; /* Enable flexbox for centering */
+    justify-content: center; /* Horizontally center content */
+    align-items: center; /* Vertically center content */
+}
+
+#container {
+    text-align: center; /* Center content inside the container */
+}
+
+#title {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px; /* Space between title and board */
+    color: rgb(255, 255, 255); /* Bright yellow for title text */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Shadow effect */
+}
+
+#message {
+    font-size: 24px; /* Large size for clarity */
+    font-weight:italic;
+    margin-bottom: 25px; /* Space between message and board */
+    color: #060606; /* Matches the overall color theme */
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 120px); /* 3 columns of equal size */
+    grid-gap: 10px; /* Space between cells */
+    background-color: #ffff00; /* Board background color */
+    padding: 10px; /* Padding around board */
+    border-radius: 15px; /* Rounded corners for the board */
+    box-shadow: 0px 10px 15px rgba(243, 7, 172, 0.5); /* Subtle shadow */
+}
+
+#board div {
+    width: 120px;
+    height: 120px;
+    display: flex; /* Flexbox for centering content inside cells */
+    align-items: center; /* Vertically center text in cells */
+    justify-content: center; /* Horizontally center text in cells */
+    font-size: 2.5em; /* Large font size for X and O */
+    font-weight: bold; /* Make X and O stand out */
+    color: #f8f8fb;
+    background-color:#ff1493; /* Box background color */
+    border: 3px solid #ffffff; /* White border for contrast */
+    border-radius: 8px; /* Rounded edges for cells */
+    cursor: pointer; /* Pointer cursor for interactivity */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth hover effects */
+}
+
+#board div:hover {
+    background-color: rgb(60, 13, 247); /* Highlight color on hover */
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
